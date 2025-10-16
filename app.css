@@ -1,0 +1,163 @@
+@font-face {
+  font-family: Space Grotesk;
+  src: url(./fonts/SpaceGrotesk.ttf);
+}
+
+body {
+  font-family: Space Grotesk;
+  color: #1f1d1b;
+  background-color: #fdfaf5;
+  padding: 19px 30px 70px;
+}
+
+.header {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 39px;
+  padding: 10.5px 0 10.5px 0;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+}
+
+.header__nav-left {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #1f1d1b;
+}
+
+.header__logo-img {
+  width: 48px;
+  height: 48px;
+}
+
+.header__logo-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.header__links {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1f1d1b;
+}
+
+.header__link {
+  color: #1f1d1b;
+}
+
+.header__account {
+  width: 48px;
+  height: 48px;
+}
+
+.header__burger-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #fdfaf5;
+}
+
+.header__burger {
+  background-color: #ec4700;
+  width: 33px;
+  height: 4px;
+  border-radius: 80px;
+}
+
+.black {
+  background-color: #494745;
+}
+
+.header__close {
+  display: none;
+}
+
+.active {
+  color: #ec4700;
+}
+
+@media (max-width: 719px) {
+  .header__nav-left {
+    gap: 15px;
+  }
+
+  .header__logo-text {
+    display: none;
+  }
+}
+
+@media (max-width: 533px) {
+  .header__links {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 29px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #5c5c5c77;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    backdrop-filter: blur(15px);
+    transform: translateX(-100%);
+    z-index: 10;
+    transition: all 0.3s linear;
+  }
+
+  .header__link {
+    color: #ffffff;
+  }
+
+  .header__burger-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header__nav-left {
+    gap: 25px;
+  }
+
+  .header__active {
+    transform: translateX(0%);
+  }
+
+  .header__close {
+    display: block;
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-bottom: 5px;
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    font-size: 35px;
+    color: #ec4700;
+    font-weight: 800;
+  }
+}

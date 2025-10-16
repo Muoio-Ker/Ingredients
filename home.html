@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="home.css" />
+    <script src="./app.js" defer></script>
+    <script src="./home.js" defer></script>
+    <title>Freshly</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="header__nav-left">
+            <a href="./home.html" class="header__logo">
+              <img
+                src="./images/logo.svg"
+                alt="logo"
+                class="header__logo-img"
+              />
+              <span class="header__logo-text">Freshly</span>
+            </a>
+            <div class="header__links">
+              <button class="header__close">x</button>
+              <a href="./home.html" class="header__link active">Home</a>
+              <a href="./recipe-list.html" class="header__link">Recipes</a>
+            </div>
+            <div class="header__burger-menu">
+              <span class="header__burger"></span>
+              <span class="header__burger black"></span>
+              <span class="header__burger"></span>
+            </div>
+          </div>
+          <img src="./images/avatar.png" alt="avatar" class="header__account" />
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="recipes">
+        <h2 class="title"></h2>
+        <div class="cards">
+          <template class="card__template">
+            <a class="card__link" href="#">
+              <div class="card">
+                <div class="card__reactions-container">
+                  <div class="card__reactions">
+                    <div class="card__reaction">
+                      <img
+                        src="./images/clock.svg"
+                        alt="clock"
+                        class="card__icon"
+                      />
+                      <span class="card__indicator">89</span>
+                    </div>
+                    <div class="card__reaction">
+                      <img
+                        src="./images/massage.svg"
+                        alt="massage"
+                        class="card__icon"
+                      />
+                      <span class="card__indicator">45</span>
+                    </div>
+                    <div class="card__reaction">
+                      <img
+                        src="./images/zap.svg"
+                        alt="zap"
+                        class="card__icon"
+                      />
+                      <span class="card__indicator">25k</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">Easy Meatballs</h3>
+                  <div class="card__categories"></div>
+                </div>
+              </div>
+            </a>
+          </template>
+        </div>
+      </section>
+      <section class="categories">
+        <h2 class="title">Popular Categories</h2>
+        <div class="categories__types">
+          <div class="categories__type">
+            <img src="./images/Meats.png" alt="Beef" class="categories__img" />
+            <span class="categories__name">Beef</span>
+          </div>
+          <div class="categories__type">
+            <img
+              src="./images/Vegetarian.png"
+              alt="Vegetarian"
+              class="categories__img"
+            />
+            <span class="categories__name">Vegetarian</span>
+          </div>
+          <div class="categories__type">
+            <img src="./images/Paleo.png" alt="Salad" class="categories__img" />
+            <span class="categories__name">Salad</span>
+          </div>
+          <div class="categories__type">
+            <img
+              src="./images/Drinks.png"
+              alt="Cocktail"
+              class="categories__img"
+            />
+            <span class="categories__name">Cocktail</span>
+          </div>
+          <div class="categories__type">
+            <img
+              src="./images/Snacks.png"
+              alt="Grilling"
+              class="categories__img"
+            />
+            <span class="categories__name">Grilling</span>
+          </div>
+          <div class="categories__type">
+            <img
+              src="./images/Breakfast.png"
+              alt="Baking"
+              class="categories__img"
+            />
+            <span class="categories__name">Baking</span>
+          </div>
+          <div class="categories__type">
+            <img
+              src="./images/Creative.png"
+              alt="Italian"
+              class="categories__img"
+            />
+            <span class="categories__name">Italian</span>
+          </div>
+          <div class="categories__type">
+            <img src="./images/Pizza.png" alt="Pizza" class="categories__img" />
+            <span class="categories__name">Pizza</span>
+          </div>
+          <div class="categories__type">
+            <img
+              src="./images/Desserts.png"
+              alt="Dessert"
+              class="categories__img"
+            />
+            <span class="categories__name">Dessert</span>
+          </div>
+          <div class="categories__type">
+            <img
+              src="./images/Ice-Cream.png"
+              alt="Matcha ice cream"
+              class="categories__img"
+            />
+            <span class="categories__name">Matcha ice cream</span>
+          </div>
+        </div>
+      </section>
+      <section class="fast">
+        <h2 class="title">Under 30 Minutes</h2>
+        <div class="cards"></div>
+      </section>
+    </main>
+  </body>
+</html>

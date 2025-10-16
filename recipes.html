@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="recipes.css" />
+    <script src="./app.js" defer></script>
+    <script src="./recipes.js" defer></script>
+    <title>recipes</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="header__nav-left">
+            <a href="./home.html" class="header__logo">
+              <img
+                src="./images/logo.svg"
+                alt="logo"
+                class="header__logo-img"
+              />
+              <span class="header__logo-text">Freshly</span>
+            </a>
+            <div class="header__links">
+              <button class="header__close">x</button>
+              <a href="./home.html" class="header__link">Home</a>
+              <a href="./recipe-list.html" class="header__link active"
+                >Recipes</a
+              >
+            </div>
+            <div class="header__burger-menu">
+              <span class="header__burger"></span>
+              <span class="header__burger black"></span>
+              <span class="header__burger"></span>
+            </div>
+          </div>
+          <img src="./images/avatar.png" alt="avatar" class="header__account" />
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="dish">
+        <h1 class="dish__title">Simple delicious beef tacos</h1>
+        <div class="dish__categories">
+          <span class="dish__category">Italian</span>
+          <span class="dish__category">Fried</span>
+          <span class="dish__category">Main Course</span>
+        </div>
+        <div class="dish__img">
+          <div class="dish__reactions">
+            <div class="dish__reaction">
+              <img src="./images/clock.svg" alt="clock" class="dish__icon" />
+              <span class="dish__indicator">89</span>
+            </div>
+            <div class="dish__reaction">
+              <img
+                src="./images/massage.svg"
+                alt="massage"
+                class="dish__icon"
+              />
+              <span class="dish__indicator">45</span>
+            </div>
+            <div class="dish__reaction">
+              <img src="./images/zap.svg" alt="zap" class="dish__icon" />
+              <span class="dish__indicator">25k</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recipe">
+        <div class="recipe__container">
+          <h2 class="recipe__title">Difficulty</h2>
+          <p class="recipe__paragraph">
+            This is my personal favorite disg and version. Definitely recommend
+            experimenting Add lomboks for spice or green tea for additional
+            flavor
+          </p>
+        </div>
+        <div class="recipe__container">
+          <h2 class="recipe__title">Details</h2>
+          <ul class="recipe__list">
+            <li>⏲️ Prep time: <span class="prep-time">20</span> min</li>
+            <li>🍳 Cook time: <span class="cook-time">180</span> min</li>
+            <li>🍽️ Servings: <span class="servings">4</span></li>
+          </ul>
+        </div>
+        <div class="recipe__container">
+          <h2 class="recipe__title">Ingredients</h2>
+          <ul class="recipe__list indent recipe__ingredients">
+            <li>1.5Kg beef in 5cm pieces</li>
+            <li>5 salam leaves</li>
+            <li>2 sticks of lemongrass</li>
+            <li>25gr dried coconut flakes</li>
+            <li>200ml pineapple juice or oj</li>
+            <li>1liter santen (coconut milk)</li>
+            <li>4 red peppers or 2 habanero</li>
+            <li>3tbps corianderseeds</li>
+            <li>5cm piece of laos grated</li>
+            <li>10cm ginger grated</li>
+            <li>1tbsp koenjit</li>
+            <li>10 cloves of garlic</li>
+            <li>4 red peppers or 2 habanero</li>
+            <li>Lomboks to taste (optional)</li>
+          </ul>
+        </div>
+        <div class="recipe__container">
+          <h2 class="recipe__title">Instructions</h2>
+          <ol class="recipe__list indent recipe__instructions">
+            <li>
+              In a kitchen mixer add peppers,garlic,laos,ginger,koenjit and the
+              koenjit and blend to a paste
+            </li>
+            <li>Take the paste and rub it into the beef</li>
+            <li>Take the beef and santen and bring to a softboilboil</li>
+            <li>
+              Add the salamleaves and lemongrass(bruised) and simmer on low for
+              2 hours
+            </li>
+            <li>
+              Taste add optional lomboks and salt and simmer 1 more hour
+              stirring occasionally
+            </li>
+            <li>
+              When the liquid has evaporated and oil floats to the top and the
+              meat is goldenbrown its done
+            </li>
+            <li>Toast the coconut flakes and stir it into the stew</li>
+            <li>
+              During the cooling down the meat will soak up the liquid we
+              rehydrate this with the pineapple juice
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

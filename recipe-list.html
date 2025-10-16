@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="recipe-list.css" />
+    <script src="./app.js" defer></script>
+    <script src="./recipe-list.js" defer></script>
+    <title>recipes</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__nav">
+          <div class="header__nav-left">
+            <a href="./home.html" class="header__logo">
+              <img
+                src="./images/logo.svg"
+                alt="logo"
+                class="header__logo-img"
+              />
+              <span class="header__logo-text">Freshly</span>
+            </a>
+            <div class="header__links">
+              <button class="header__close">x</button>
+              <a href="./home.html" class="header__link">Home</a>
+              <a href="" class="header__link active">Recipes</a>
+            </div>
+            <div class="header__burger-menu">
+              <span class="header__burger"></span>
+              <span class="header__burger black"></span>
+              <span class="header__burger"></span>
+            </div>
+          </div>
+          <img src="./images/avatar.png" alt="avatar" class="header__account" />
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="navigation">
+        <div class="search">
+          <input type="text" placeholder="search" class="search__input" />
+          <button class="search__btn">
+            <img src="./images/search.svg" alt="search" class="search__img" />
+          </button>
+          <button class="clear-btn">x</button>
+        </div>
+        <select class="select">
+          <option value="dvvdd">ddvvd</option>
+          <option value="ddd">ddd</option>
+          <option value="ddd">ddd</option>
+        </select>
+      </div>
+      <div class="categories-btns">
+        <button class="categories-btn">Beef</button>
+        <button class="categories-btn">Vegetarian</button>
+        <button class="categories-btn">Salad</button>
+        <button class="categories-btn">Cocktail</button>
+        <button class="categories-btn">Grilling</button>
+        <button class="categories-btn">Baking</button>
+        <button class="categories-btn">Italian</button>
+        <button class="categories-btn">Pizza</button>
+        <button class="categories-btn">Dessert</button>
+        <button class="categories-btn">Matcha ice cream</button>
+      </div>
+      <section class="recipe-list">
+        <h1 class="title"></h1>
+        <div class="cards">
+          <template class="card__template">
+            <a class="card__link" href="#">
+              <div class="card">
+                <div class="card__reactions-container">
+                  <div class="card__reactions">
+                    <div class="card__reaction">
+                      <img
+                        src="./images/clock.svg"
+                        alt="clock"
+                        class="card__icon"
+                      />
+                      <span class="card__indicator">89</span>
+                    </div>
+                    <div class="card__reaction">
+                      <img
+                        src="./images/massage.svg"
+                        alt="massage"
+                        class="card__icon"
+                      />
+                      <span class="card__indicator">45</span>
+                    </div>
+                    <div class="card__reaction">
+                      <img
+                        src="./images/zap.svg"
+                        alt="zap"
+                        class="card__icon"
+                      />
+                      <span class="card__indicator">25k</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="card__info">
+                  <h3 class="card__title">Easy Meatballs</h3>
+                  <div class="card__categories"></div>
+                </div>
+              </div>
+            </a>
+          </template>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

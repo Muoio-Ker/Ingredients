@@ -1,0 +1,136 @@
+.main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.recipes {
+  margin-bottom: 60px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 24px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 267px;
+  height: 390px;
+  border-radius: 24px;
+  padding: 24px 16px 24px 16px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    url(./images/Meatballs.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card__link {
+  color: inherit;
+}
+
+.card__reactions-container {
+  display: flex;
+  justify-content: end;
+}
+
+.card__reactions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.card__reaction {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.8;
+}
+
+.card__indicator {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.card__categories {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.card__category {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 100px;
+  padding: 4px 8px;
+}
+
+.categories {
+  margin-bottom: 48px;
+}
+
+.categories__types {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.categories__type {
+  width: 195px;
+  height: 76px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.categories__img {
+  width: 76px;
+  height: 76px;
+  border-radius: 16px;
+}
+
+.categories__name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+}

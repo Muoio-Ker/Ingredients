@@ -1,0 +1,105 @@
+.main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding-top: 16px;
+}
+
+.dish {
+  margin-bottom: 40px;
+}
+
+.dish__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 41px;
+  letter-spacing: 0%;
+  margin-bottom: 16px;
+}
+
+.dish__categories {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dish__category {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: rgba(31, 29, 27, 0.15);
+  border-radius: 100px;
+  padding: 4px 8px;
+  margin-bottom: 32px;
+}
+
+.dish__img {
+  background-image: url(./images/tacos.png);
+  background-size: cover;
+  background-position: center center;
+  aspect-ratio: 16 / 9;
+  border-radius: 4.5% / 8%;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+}
+
+.dish__reactions {
+  background-color: rgba(31, 29, 27, 0.4);
+  border-radius: 100% / 22%;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px 18px;
+}
+
+.dish__reaction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.dish__icon {
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+}
+
+.dish__indicator {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.recipe__title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 33px;
+  letter-spacing: 0%;
+}
+
+.recipe__container {
+  margin-bottom: 32px;
+}
+
+.recipe__paragraph {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.recipe__list {
+  list-style-position: inside;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.indent {
+  line-height: 37px;
+}
